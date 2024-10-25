@@ -157,7 +157,7 @@ async function updateRichPresence() {
 export default definePlugin({
     name: "WeatherRPC",
     description: "Displays weather in your Discord rich presence.",
-    authors: [Devs.k_z],
+    // authors: [Devs.k_z], k_z. real
     dependencies: ["UserSettingsAPI"],
     start: updateRichPresence,
     stop: () => FluxDispatcher.dispatch({ type: "LOCAL_ACTIVITY_UPDATE", activity: null, socketId: "WeatherRPC" }),
