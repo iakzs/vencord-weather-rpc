@@ -103,7 +103,7 @@ async function fetchWeatherData(location: string) {
     const geocodeUrl = `https://nominatim.openstreetmap.org/search?format=json&q=${location}`;
     const geoResponse = await fetch(geocodeUrl, {
         headers: {
-            "User-Agent": "WeatherRPC/1.0 (https://vencord.dev/plugins/WeatherRPC)" // Needed or will get blocked
+            "User-Agent": "WeatherRPC/1.0 (https://github.com/iakzs/vencord-weather-rpc)" // Needed or will get blocked
         }
     });
 
